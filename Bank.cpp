@@ -83,11 +83,6 @@ void BankSystem::decreaseBankBalance(int amount)
     this->m_bankMoney.subMoney(amount);
 }
 
-/*void BankSystem::makeCustomor(std::string firstName, std::string lastName)
-{
-    m_newCustomor = new Customor(firstName,lastName);
-}*/
-
 int BankSystem::checkAvaliableBalance()
 {
     return this-> m_newCustomor.getAvaliableBalance();
