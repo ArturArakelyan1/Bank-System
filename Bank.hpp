@@ -47,7 +47,7 @@ public:
     int getBalance();
     void addMoney(int amount);
     void cashManey(int amount);
-    //moneyset
+    
     
 };
 
@@ -62,7 +62,6 @@ public:
     Money checkBankBalance();
     void topUpBankBalance(int amount);
     void decreaseBankBalance(int amount);
-    //void makeCustomor(std::string firstName,std::string lastName);
     int checkAvaliableBalance();
     int checkBalance();
     void AddMoney(int money);
@@ -77,7 +76,7 @@ std::string generateAccountID()
     static const char digits[] = "0123456789";
 
     std::string accountID;
-    srand(static_cast<unsigned int>(time(0))); // Seed the random number generator
+    srand(static_cast<unsigned int>(time(0))); 
 
     for (int i = 0; i < length; ++i) {
         int randomIndex = rand() % (sizeof(digits) - 1);
